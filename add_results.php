@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-include 'db.php'; // Ensure 'db.php' exists and contains $conn
+include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $polling_unit_id = isset($_POST['polling_unit_id']) ? intval($_POST['polling_unit_id']) : 0;
