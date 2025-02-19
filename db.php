@@ -1,17 +1,12 @@
 <?php
+// this will connect my code to the database.
 $host = "localhost";
-$user = "root"; 
+$user = "root";
 $pass = "";
-$dbname = "bincomphptest"; 
+$dbname = "bincomphptest";
 
-$conn = new mysqli("localhost", "root", "", "bincomphptest");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+$conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
-} else {
-    echo "✅ Database connected successfully!";
 }
-
 ?>
